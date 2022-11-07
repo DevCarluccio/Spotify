@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --default-green: #1db954;
+    --light-green: #1ed760;
+    --gray: #919496;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "roboto", sans-serif;
+}
+
+/* Utility Classes */
+
+.btn-primary {
+    background: #1db954;
+    color: #fff;
+    margin-top: 6rem;
+    padding: 18px 30px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-weight: 800;
+}
+.btn-primary:hover {
+    background-color: #1ed760;
+    cursor: pointer; 
+    font-size: 14px;
+    transition: all 0.4s ease;
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+    cursor: pointer;
+}
+
+            /* Navbar */
+
+#navbar {
+    display: flex;
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#navbar  .navbar-container{
+    width: 70%;
+    padding: 20px 0;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navbar .navbar-container .logo {
+    height: 40px;
+    width: auto;
+}
+
+#navbar .navbar-container ul {
+    display: flex;
+    list-style: none;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+#navbar .navbar-container ul li {
+    padding: 0 20px;
+}
+
+#navbar .navbar-container ul li:hover {
+    cursor: pointer;
+    color: #1db954;
+    transition: all 0.4s ease;
+}
+
+#navbar .navbar-container ul li:nth-child(3) {
+    border-left: 1px solid white;
+}
+
+.navbar-item-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    display: none;
+}
+
+span {
+    color: red;
+    font-size: 30px;
+}
+
+.menu {
+    cursor: pointer;
+    display: none;
+}
+
+.menu .bar {
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background: var(--default-green);
+    margin: 5px auto;
+    transition: all 0.3s;
+}
+
+.menu .bar:nth-child(1),
+.menu .bar:nth-child(3){
+    background: var(--light-green)
+}
+
+
+    /* Showcase */
+
+    #showcase {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background: url("../img/spot-light.webp") center center/cover;
+        background-color: rgba(0, 0, 0, 0.6);
+        background-blend-mode: color;
+    }
+
+    #showcase .showcase-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #showcase .showcase-container h2 {
+        font-size: 8rem;
+        font-weight:900;
+        color: rgba(255, 255, 255, 0.774);
+    }
+
+    #showcase .showcase-container p {
+        margin: 15px 0;
+        font-size: 1.1rem;
+        color: rgba(255, 255, 255, 0.774);
+        letter-spacing: 1px;
+        font-weight: bold;
+    }
+
+        /*Footer*/
+
+    #footer {
+        background: black;
+        color: white;
+        padding: 50px 0;
+    }
+
+    #footer .footer-content  {
+        display: flex;
+        width: 70%;
+        margin: auto;
+        justify-content: space-between;
+        font-size: 13px;
+    }
+
+    #footer .footer-content .footer-menu {
+        margin: 10px 40px;
+        list-style: none;
+        cursor: pointer;
+    }
+
+    #footer .footer-content .footer-menu .footer-menu-item {
+        margin: 25px 0;
+    }
+
+    #footer .footer-content .footer-menu .footer-menu-item:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        color: var(--light-green);
+        transition: all 0.4s ease;
+    }
+    
+
+    #footer .footer-content .footer-menu p {
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #919496;
+        font-size: 0.8rem;
+    }
+
+    .socials {
+        display: flex;
+    }
+    .socials i {
+        margin: 0 20px;
+        font-size: 1.8rem;
+    }
+    .socials i::before {
+        cursor: pointer;
+    }
+    .socials i:nth-child(1) {
+       color: rgba(188, 42, 141);
+    }
+    .socials i:nth-child(1):hover {
+        margin-top: -10px;
+        transition: all 0.5s ease;
+       color: rgba(188, 42, 141);
+    }
+    .socials i:nth-child(2) {
+        color: rgb(29 161 242)
+    }
+    .socials i:nth-child(2):hover {
+        margin-top: -10px;
+        transition: all 0.5s ease;
+        color: rgb(29 161 242)
+    }
+    .socials i:nth-child(3) {
+        color: rgb(6, 53, 148);
+    }
+    .socials i:nth-child(3):hover {
+        margin-top: -10px;
+        transition: all 0.5s ease;
+        color: rgb(6, 53, 148);
+    }
+    
+
+    
+
+
+    /*   Footer info    */
+
+    .footer-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 60%;
+        margin: auto;
+        font-weight: bold;
+        color: #919496;
+        font-size: 0.75rem;
+        padding-top: 8rem;
+    }
+
+    .footer-info .footer-info-items {
+        display: flex;
+        list-style: none;
+    }
+
+    .footer-info .footer-info-items .footer-info-item {
+        margin: 0 10px;
+        font-weight: bold;
+        color: #919496;
+        font-size: 0.7rem;
+    }
+
+    .footer-info .footer-info-items .footer-info-item:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        color: var(--light-green);
+        transition: all 400ms ease;
+    }
+
+
+    .footer-info .rights .country {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .footer-info .rights .country .brasil {
+        height: 20px;
+        width: auto;
+        display: inline-block;
+        margin-left: 10px;
+        
+    }
+
+    .footer-info .country:hover {
+        color: var(--light-green);
+        cursor: pointer;
+    }
